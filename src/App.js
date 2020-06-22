@@ -54,17 +54,20 @@ class App extends Component{
                 {/*    handleClick = {this.switchData()}*/}
                 {/*    buttonTexts = {this.state.dataTracker}*/}
                 {/*/>*/}
-                <button className='button' onClick={this.switchData} >
-                    {this.state.dataTracker}
-                </button>
-                <pre>
-                </pre>
                 <h1> Monsters Rolodex</h1>
                 <SearchBox
                     placeholder = 'search for monsters'
                     handleChange={this.handleChange}
                 />
                 <pre>
+                </pre>
+                <button className='button' onClick={this.switchData} >
+                    {this.state.dataTracker}
+                </button>
+                <pre>
+                </pre>
+                <pre>
+                    {"\n"}
                 </pre>
                 <CardList monsters = {filteredMonsters}> </CardList>
             </div>
